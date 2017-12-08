@@ -1,3 +1,166 @@
-body {
-    background-color: black;
+/*
+Theme Name: Different Than Fitness
+*/
+
+// FONTS
+$font-stack: 'Gochi Hand',
+sans-serif;
+
+// COLORS
+$color-red: #cd2e71;
+
+
+// NAVBAR DIMENSIONS
+$navbar-height: 45px;
+
+///////////////////// RESPONSIVE BOOTSTRAP DEFINITIONS \\\\\\\\\\\\\\\\\\\\\\\\\
+@mixin xs-only {
+    @media (max-width: 767px) {
+        @content;
+    }
 }
+
+@mixin sm-only {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+
+///////////////////////////// GENERAL DEFINITIONS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+body {
+    // adjusts for sticky navbar
+    padding-top: 65px;
+    font-family: $font-stack;
+    font-size: 18px;
+    line-height: 1.9em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {}
+
+h3 {}
+
+// font-awesome
+.fa {
+    font-size: 30px;
+}
+
+// BUTTON STYLING ON 'a' tags
+a {
+    &.btn {
+        border-radius: 5px;
+        color: #fff;
+        background-color: $color-red;
+        text-transform: uppercase;
+        border: 3px solid $color-red;
+        width: 370px;
+        padding: 10px 0;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        margin-bottom: 10px;
+        &:visited {
+            color: #fff;
+        }
+        &:hover {
+            color: #fff;
+            background-color: $color-red;
+            border: 3px solid $color-red;
+        }
+        @include xs-only {
+            width: 100%;
+        }
+    }
+}
+
+////////////////////////////////// NAVBAR \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+.navbar {
+    background-color: $color-red;
+    text-transform: uppercase;
+    min-height: $navbar-height !important;
+    margin-bottom: 0;
+    font-size: 18px;
+    @include sm {
+        font-size: 16px;
+    }
+    @include md {
+        font-size: 18px;
+    }
+    .navbar-nav {
+        li {
+            a {
+                // change padding-top and bottom below to adjust navbar size
+                // you may also have to adjust min-height of .navbar as well.
+                padding-top: 12px;
+                padding-bottom: 12px;
+                color: #fff;
+                -moz-transition: .5s;
+                -webkit-transition: .5s;
+                transition: .5s;
+                &:hover {
+                    background-color: black;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .navbar-logo {
+        width: 70%;
+        height: auto;
+        display: inline;
+        padding: 5px 0 0 5px;
+    }
+}
+
+
+// Below code justifies navbar items across the top evenly
+@include sm {
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+    }
+}
+
+////////////////////////////////// BODY \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+body {
+    background-image: url(/images/yoga-mat3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: center;
+}
+////////////////////////////// MEDIA SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+////////////////////////////// TESTIMONIALS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+////////////////////////////////// FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

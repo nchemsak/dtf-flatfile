@@ -1,4 +1,85 @@
+/*
+Theme Name: Different Than Fitness
+*/
 body {
-  background-color: black; }
+  padding-top: 65px;
+  font-family: "Gochi Hand", sans-serif;
+  font-size: 18px;
+  line-height: 1.9em;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+h1 {
+  font-size: 48px; }
+
+.fa {
+  font-size: 30px; }
+
+a.btn {
+  border-radius: 5px;
+  color: #fff;
+  background-color: #cd2e71;
+  text-transform: uppercase;
+  border: 3px solid #cd2e71;
+  width: 370px;
+  padding: 10px 0;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 10px; }
+  a.btn:visited {
+    color: #fff; }
+  a.btn:hover {
+    color: #fff;
+    background-color: #cd2e71;
+    border: 3px solid #cd2e71; }
+  @media (max-width: 767px) {
+    a.btn {
+      width: 100%; } }
+
+.navbar {
+  background-color: #cd2e71;
+  text-transform: uppercase;
+  min-height: 45px !important;
+  margin-bottom: 0;
+  font-size: 18px; }
+  @media (min-width: 768px) {
+    .navbar {
+      font-size: 16px; } }
+  @media (min-width: 992px) {
+    .navbar {
+      font-size: 18px; } }
+  .navbar .navbar-nav li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
+    .navbar .navbar-nav li a:hover {
+      background-color: black;
+      color: #fff; }
+  .navbar .navbar-logo {
+    width: 70%;
+    height: auto;
+    display: inline;
+    padding: 5px 0 0 5px; }
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    margin: 0 auto;
+    display: table;
+    table-layout: auto;
+    float: none;
+    width: 100%; }
+
+  .navbar-nav > li {
+    display: table-cell;
+    float: none;
+    text-align: center; } }
+body {
+  background-image: url(/images/yoga-mat3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=styles.css.map */
