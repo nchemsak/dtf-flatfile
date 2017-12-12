@@ -31,8 +31,8 @@ a.btn {
     color: #fff; }
   a.btn:hover {
     color: #fff;
-    background-color: #cd2e71;
-    border: 3px solid #cd2e71; }
+    background-color: #3c3d41;
+    border: 3px solid #3c3d41; }
   @media (max-width: 767px) {
     a.btn {
       width: 100%; } }
