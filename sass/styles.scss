@@ -3,8 +3,12 @@ Theme Name: Different Than Fitness
 */
 
 // FONTS
-$font-stack: 'Gochi Hand',
+// $font-stack-handwritten: 'Gochi Hand',
+// sans-serif;
+
+$font-stack-clean: 'Montserrat',
 sans-serif;
+
 
 // COLORS
 $color-red: #cd2e71;
@@ -65,7 +69,8 @@ $navbar-height: 45px;
 body {
     // adjusts for sticky navbar
     padding-top: 65px;
-    font-family: $font-stack;
+    font-family: $font-stack-clean;
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.9em;
     -webkit-font-smoothing: antialiased;
@@ -617,7 +622,6 @@ footer {
         color: rgba(255, 255, 255, 0.7);
         background-color: rgba(17, 17, 17, 0);
         &:hover {
-
             border-color: #000000;
             background-color: #111111;
         }
@@ -709,3 +713,4 @@ nav.btn-bar {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
