@@ -223,7 +223,7 @@ body {
 .caption {
   font-size: 16px;
   color: #fff;
-  padding: 17px 0 0 0;
+  padding: 13px 0 0 0;
   background-color: #3c3d41;
   min-width: 90px;
   min-height: 60px;
@@ -288,21 +288,60 @@ footer {
       footer .footer-nav ul.list a:hover {
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none; }
-  footer .footer-social ul {
+  footer #footer-social ul {
     list-style: none;
     padding: 0px; }
-  footer .footer-social h4 {
+  footer #footer-social h4 {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 10px; }
-  footer .footer-social li {
-    padding: 5px 4px; }
-  footer .footer-social a {
+  footer #footer-social li {
+    display: inline;
+    height: 0;
+    margin-bottom: 5px; }
+  footer #footer-social a {
     color: white; }
-    footer .footer-social a:hover {
+    footer #footer-social a:hover {
       color: rgba(255, 255, 255, 0.8);
       text-decoration: none; }
+  footer #footer-social .icon-link {
+    width: 60px;
+    height: 60px;
+    background-color: #666;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border-radius: 50%; }
+    @media (min-width: 992px) {
+      footer #footer-social .icon-link {
+        margin: 5px auto;
+        display: block; } }
+    footer #footer-social .icon-link .fa {
+      color: #fff;
+      line-height: 60px;
+      font-size: 36px; }
+    footer #footer-social .icon-link:hover {
+      height: 56px;
+      line-height: 56px;
+      width: 56px;
+      border: 2px solid #666;
+      -webkit-background-clip: text; }
+      footer #footer-social .icon-link:hover .fa {
+        line-height: 56px; }
+      footer #footer-social .icon-link:hover .fa-facebook {
+        color: #3b5998; }
+      footer #footer-social .icon-link:hover .fa-twitter {
+        color: #00aced; }
+      footer #footer-social .icon-link:hover .fa-instagram {
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
   footer .footer-ns h4 {
     font-size: 11px;
     text-transform: uppercase;
@@ -311,41 +350,8 @@ footer {
   footer .footer-ns p {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.7); }
-
-.icon-link {
-  width: 60px;
-  height: 60px;
-  background-color: #666;
-  line-height: 60px;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  margin: 5px;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  border-radius: 50%; }
-  .icon-link .fa {
-    color: #fff;
-    line-height: 60px;
-    font-size: 36px; }
-  .icon-link:hover {
-    height: 56px;
-    line-height: 56px;
-    width: 56px;
-    border: 2px solid #666;
-    -webkit-background-clip: text; }
-    .icon-link:hover .fa {
-      line-height: 56px; }
-    .icon-link:hover .fa-facebook {
-      color: #3b5998; }
-    .icon-link:hover .fa-twitter {
-      color: #00aced; }
-    .icon-link:hover .fa-instagram {
-      background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+  footer #footer-menu-links {
+    font-size: 14px; }
 
 .btn-glass {
   -webkit-box-flex: 1;
