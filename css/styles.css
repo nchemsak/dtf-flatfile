@@ -290,7 +290,8 @@ footer {
         text-decoration: none; }
   footer #footer-social ul {
     list-style: none;
-    padding: 0px; }
+    padding: 0px;
+    margin-top: 20px; }
   footer #footer-social h4 {
     font-size: 11px;
     text-transform: uppercase;
