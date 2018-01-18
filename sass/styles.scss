@@ -10,7 +10,7 @@ sans-serif;
 
 
 // COLORS
-$color-red: #cd2e71;
+$color-red: #AC0101;
 $color-grey: #3c3d41;
 
 
@@ -65,15 +65,13 @@ $navbar-height: 45px;
 }
 
 ///////////////////////////// GENERAL DEFINITIONS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-body {
-    // adjusts for sticky navbar
-    padding-top: 65px;
-    font-family: $font-stack-clean;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.9em;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
+
+
+::selection {
+  background: $color-red; 
+}
+::-moz-selection {
+  background: $color-red; 
 }
 
 h1 {
@@ -99,7 +97,7 @@ h3 {}
     z-index: 99;
     border: none;
     outline: 0;
-    background-color: #036;
+    background-color: $color-red;
     opacity: .9;
     color: #fff;
     cursor: pointer;
@@ -114,7 +112,7 @@ h3 {}
         display: block;
         overflow: hidden;
         float: left;
-        background-color: #669acc;
+        background-color: $color-grey;
     }
     &::before {
         line-height: 35px;
@@ -181,12 +179,77 @@ h3 {}
     }
 }
 
+
+////////////////////////////////// HEADER black-banner-section \\\\\\\\\\\\\\\\\
+.logo-wrapper {
+    background-color: #fff;
+    padding-bottom: 10px;
+    img {
+        margin: 0 auto;
+    }
+}
+
+.large-banner-wrapper {
+    position: relative;
+    .spacer-wrapper {
+        position: absolute;
+        top: -10px;
+        width: 630px;
+        text-align: center;
+        display: inline-block; // margin: 0 auto;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .grey-spacer {
+        height: 10px;
+        background-color: $color-grey;
+    }
+    .white-spacer {
+        height: 10px;
+        background-color: #fff;
+    }
+    .red-spacer {
+        height: 10px;
+        background-color: $color-red;
+    }
+    .black-spacer {
+        height: 10px;
+        background-color: #000;
+    }
+    #black-banner-section {
+        height: 175px;
+        background-color: #000;
+        border-top: 10px solid $color-red;
+        color: #676767;
+        h1 {
+            font-size: 70px;
+            margin: 9px 0px;
+        }
+        h3 {
+            font-family: "Gochi Hand";
+            font-size: 44px;
+            margin-top: 0px;
+            color: #fff;
+        }
+    }
+}
+
 ////////////////////////////////// BODY \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 body {
-    background-image: url(/images/yoga-mat3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; // background-position: center;
-    background-attachment: fixed;
+    // background-image: url(/images/yoga-mat3.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat; // background-position: center;
+    // background-attachment: fixed;
+    padding-top: 45px;
+    font-family: $font-stack-clean;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.9em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    background-color: #c5bd99;
 }
 
 
@@ -210,6 +273,13 @@ body {
 .no-gutters .caption {
     transition: .6s;
     overflow: hidden;
+    border-top-left-radius: 0px 0px !important;
+    border-top-right-radius: 0px 0px !important;
+    border-bottom-left-radius: 50px 20px !important;
+    border-bottom-right-radius: 50px 20px !important;
+
+
+
     &:before {
         content: '';
         display: block;
@@ -259,25 +329,25 @@ body {
 
 //////////////////////////////// IMAGE CARDS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 .pic-one {
-    background: url(/images/yoga-mat.jpg) center no-repeat;
+    background: url(/images/lacey.jpg) center no-repeat;
     background-size: cover;
     @include zoom;
 }
 
 .pic-two {
-    background: url(/images/yoga-mat2.jpg) center no-repeat;
+    background: url(/images/handstand.jpg) center no-repeat;
     background-size: cover;
     @include zoom;
 }
 
 .pic-three {
-    background: url(/images/yoga-pose.jpg) center no-repeat;
+    background: url(/images/handstand.jpg) center no-repeat;
     background-size: cover;
     @include zoom;
 }
 
 .pic-four {
-    background: url(/images/DDPYogaPoses.jpg) center no-repeat;
+    background: url(/images/diamond-cutter.jpg) center no-repeat;
     background-size: cover;
     @include zoom;
 }
@@ -298,10 +368,13 @@ body {
 .row.no-gutters {
     margin-right: 0;
     margin-left: 0;
+
     &>[class^="col-"],
     &>[class*=" col-"] {
         padding-right: 0;
         padding-left: 0;
+        border-top-left-radius: 50px 20px;
+        border-top-right-radius: 50px 20px;
     }
 }
 
