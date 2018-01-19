@@ -147,11 +147,7 @@ body {
 
 .no-gutters .caption {
   transition: .6s;
-  overflow: hidden;
-  border-top-left-radius: 0px 0px !important;
-  border-top-right-radius: 0px 0px !important;
-  border-bottom-left-radius: 50px 20px !important;
-  border-bottom-right-radius: 50px 20px !important; }
+  overflow: hidden; }
   .no-gutters .caption:before {
     content: '';
     display: block;
@@ -266,9 +262,7 @@ body {
   margin-left: 0; }
   .row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
     padding-right: 0;
-    padding-left: 0;
-    border-top-left-radius: 50px 20px;
-    border-top-right-radius: 50px 20px; }
+    padding-left: 0; }
 
 .caption {
   font-size: 16px;
