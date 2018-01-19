@@ -112,7 +112,7 @@ h3 {}
         overflow: hidden;
         float: left;
         background-color: $color-grey;
-              background-image: url(/images/b20.png);
+        background-image: url(/images/b20.png);
     }
     &::before {
         line-height: 35px;
@@ -186,6 +186,8 @@ h3 {}
     padding-bottom: 10px;
     img {
         margin: 0 auto;
+        width: 250px;
+        height: auto;
     }
 }
 
@@ -217,14 +219,14 @@ h3 {}
     .black-spacer {
         height: 10px;
         background-color: #000;
-              background-image: url(/images/b20.png);
+        background-image: url(/images/b20.png);
     }
     #black-banner-section {
         height: 175px;
         background-color: #000;
         border-top: 10px solid $color-red;
         color: #676767;
-      background-image: url(/images/b20.png);
+        background-image: url(/images/b20.png);
         h1 {
             font-size: 70px;
             margin: 9px 0px;
@@ -244,7 +246,7 @@ body {
     // background-size: cover;
     // background-repeat: no-repeat; // background-position: center;
     // background-attachment: fixed;
-    padding-top: 45px;
+    // padding-top: 45px;
     font-family: $font-stack-clean;
     font-weight: 300;
     font-size: 18px;
@@ -259,8 +261,7 @@ body {
 /////////////////////////////// ANIMATED CAPTIONS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 .no-gutters .caption {
     transition: .6s;
-    overflow: hidden;
-    // border-top-left-radius: 0px 0px !important;
+    overflow: hidden; // border-top-left-radius: 0px 0px !important;
     // border-top-right-radius: 0px 0px !important;
     // border-bottom-left-radius: 50px 20px !important;
     // border-bottom-right-radius: 50px 20px !important;
@@ -318,87 +319,87 @@ body {
 }
 
 //////////////////////////////// IMAGE CARDS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-.pic-one {
-    background: url(/images/lacey.jpg) center no-repeat;
-    background-size: cover;
-    @include zoom;
-}
-
-.pic-two {
-    background: url(/images/handstand.jpg) center no-repeat;
-    background-size: cover;
-    @include zoom;
-}
-
-.pic-three {
-    background: url(/images/handstand.jpg) center no-repeat;
-    background-size: cover;
-    @include zoom;
-}
-
-.pic-four {
-    background: url(/images/diamond-cutter.jpg) center no-repeat;
-    background-size: cover;
-    @include zoom;
-}
-
-
-.card-img {
-    min-width: 90px;
-    min-height: 60px;
-    @include sm {
-        min-width: 100%;
-        min-height: 177px;
+#tiles {
+    margin-top: 40px;
+    .pic-one {
+        background: url(/images/lacey.jpg) center no-repeat;
+        background-size: cover;
+        @include zoom;
     }
-    @include md {
-        width: 100%;
+
+    .pic-two {
+        background: url(/images/handstand.jpg) center no-repeat;
+        background-size: cover;
+        @include zoom;
     }
-}
 
-.row.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-
-    &>[class^="col-"],
-    &>[class*=" col-"] {
-        padding-right: 0;
-        padding-left: 0; // border-top-left-radius: 50px 20px;
-        // border-top-right-radius: 50px 20px;
+    .pic-three {
+        background: url(/images/handstand.jpg) center no-repeat;
+        background-size: cover;
+        @include zoom;
     }
-}
 
-.caption {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    padding: 13px 0 0 0;
-    background-color: $color-grey;
-    min-width: 90px;
-    min-height: 60px;
-    margin-bottom: 10px;
-    text-align: center;
-    background-image: url(/images/grey-background.png);
-    background-image: url(/images/b36.png);
-      // background-image: url(/images/b20.png);
-    @include lg {
-        margin-bottom: 20px;
+    .pic-four {
+        background: url(/images/diamond-cutter.jpg) center no-repeat;
+        background-size: cover;
+        @include zoom;
     }
 
 
-    @include sm {
-        // width: 270px;
-        height: 60px; // margin-left: 15px;
-        padding-left: 0;
+    .card-img {
+        min-width: 90px;
+        min-height: 60px;
+        @include sm {
+            min-width: 100%;
+            min-height: 177px;
+        }
+        @include md {
+            width: 100%;
+        }
     }
-    @include md {
-        width: 100%;
+
+    .row.no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+
+        &>[class^="col-"],
+        &>[class*=" col-"] {
+            padding-right: 0;
+            padding-left: 0; // border-top-left-radius: 50px 20px;
+            // border-top-right-radius: 50px 20px;
+        }
     }
-    @include lg {
-        width: 100%;
+
+    .caption {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 500;
+        padding: 13px 0 0 0;
+        background-color: $color-grey;
+        min-width: 90px;
+        min-height: 60px;
+        margin-bottom: 10px;
+        text-align: center;
+        background-image: url(/images/grey-background.png);
+        background-image: url(/images/b36.png); // background-image: url(/images/b20.png);
+        @include lg {
+            margin-bottom: 20px;
+        }
+
+
+        @include sm {
+            // width: 270px;
+            height: 60px; // margin-left: 15px;
+            padding-left: 0;
+        }
+        @include md {
+            width: 100%;
+        }
+        @include lg {
+            width: 100%;
+        }
     }
 }
-
-
 
 ////////////////////////////////// FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 footer {
@@ -412,10 +413,8 @@ footer {
 
 
     background-color: $color-grey;
-    background-image: url(/images/grey-background.png);
-    // overflow: hidden;
+    background-image: url(/images/grey-background.png); // overflow: hidden;
     // background-repeat: repeat;
-
     .footer-brand,
     .footer-nav,
     .footer-social,
@@ -561,7 +560,6 @@ footer {
     #footer-menu-links {
         font-size: 14px;
     }
-
 }
 
 // glass buttons

@@ -1,10 +1,5 @@
 "use strict";
 
-function add(a, b) {
-    return a + b;
-}
-console.log("add(5, 12): ", add(5, 12));
-
 ///////////////////////////// scroll to top button ////////////////////////////
 // When the user scrolls down 20px from the top of the document, show the button
 // button HTML is located on the FOOTER template.
@@ -32,3 +27,25 @@ function topFunction() {
     });
 
 }
+
+
+
+$(document).ready(function() {
+  //change the integers below to match the height of your upper dive, which I called
+  //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
+  //to figure out what the scroll position is when exactly you want to fix the nav
+  //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
+  //you know the position.
+  $(window).scroll(function () {
+
+    console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > 150) {
+      $('#all-headings').addClass('navbar-fixed-top');
+    }
+
+    if ($(window).scrollTop() < 151) {
+      $('#all-headings').removeClass('navbar-fixed-top');
+    }
+  });
+});

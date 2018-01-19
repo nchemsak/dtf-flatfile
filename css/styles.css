@@ -89,7 +89,9 @@ h1 {
   background-color: #fff;
   padding-bottom: 10px; }
   .logo-wrapper img {
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 250px;
+    height: auto; }
 
 .large-banner-wrapper {
   position: relative; }
@@ -131,7 +133,6 @@ h1 {
       color: #fff; }
 
 body {
-  padding-top: 45px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -188,109 +189,105 @@ body {
   position: relative;
   overflow: hidden; }
 
-.pic-one {
-  background: url(/images/lacey.jpg) center no-repeat;
-  background-size: cover; }
-  @media (min-width: 992px) {
-    .pic-one {
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease; }
-      .pic-one:hover {
-        -webkit-backface-visibility: hidden;
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1); } }
-
-.pic-two {
-  background: url(/images/handstand.jpg) center no-repeat;
-  background-size: cover; }
-  @media (min-width: 992px) {
-    .pic-two {
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease; }
-      .pic-two:hover {
-        -webkit-backface-visibility: hidden;
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1); } }
-
-.pic-three {
-  background: url(/images/handstand.jpg) center no-repeat;
-  background-size: cover; }
-  @media (min-width: 992px) {
-    .pic-three {
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease; }
-      .pic-three:hover {
-        -webkit-backface-visibility: hidden;
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1); } }
-
-.pic-four {
-  background: url(/images/diamond-cutter.jpg) center no-repeat;
-  background-size: cover; }
-  @media (min-width: 992px) {
-    .pic-four {
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-      transition: all 1s ease; }
-      .pic-four:hover {
-        -webkit-backface-visibility: hidden;
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1); } }
-
-.card-img {
-  min-width: 90px;
-  min-height: 60px; }
-  @media (min-width: 768px) {
-    .card-img {
-      min-width: 100%;
-      min-height: 177px; } }
-  @media (min-width: 992px) {
-    .card-img {
-      width: 100%; } }
-
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0; }
-  .row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0; }
-
-.caption {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 500;
-  padding: 13px 0 0 0;
-  background-color: #3c3d41;
-  min-width: 90px;
-  min-height: 60px;
-  margin-bottom: 10px;
-  text-align: center;
-  background-image: url(/images/grey-background.png);
-  background-image: url(/images/b36.png); }
-  @media (min-width: 1200px) {
-    .caption {
-      margin-bottom: 20px; } }
-  @media (min-width: 768px) {
-    .caption {
-      height: 60px;
-      padding-left: 0; } }
-  @media (min-width: 992px) {
-    .caption {
-      width: 100%; } }
-  @media (min-width: 1200px) {
-    .caption {
-      width: 100%; } }
+#tiles {
+  margin-top: 40px; }
+  #tiles .pic-one {
+    background: url(/images/lacey.jpg) center no-repeat;
+    background-size: cover; }
+    @media (min-width: 992px) {
+      #tiles .pic-one {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease; }
+        #tiles .pic-one:hover {
+          -webkit-backface-visibility: hidden;
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1); } }
+  #tiles .pic-two {
+    background: url(/images/handstand.jpg) center no-repeat;
+    background-size: cover; }
+    @media (min-width: 992px) {
+      #tiles .pic-two {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease; }
+        #tiles .pic-two:hover {
+          -webkit-backface-visibility: hidden;
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1); } }
+  #tiles .pic-three {
+    background: url(/images/handstand.jpg) center no-repeat;
+    background-size: cover; }
+    @media (min-width: 992px) {
+      #tiles .pic-three {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease; }
+        #tiles .pic-three:hover {
+          -webkit-backface-visibility: hidden;
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1); } }
+  #tiles .pic-four {
+    background: url(/images/diamond-cutter.jpg) center no-repeat;
+    background-size: cover; }
+    @media (min-width: 992px) {
+      #tiles .pic-four {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease; }
+        #tiles .pic-four:hover {
+          -webkit-backface-visibility: hidden;
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1); } }
+  #tiles .card-img {
+    min-width: 90px;
+    min-height: 60px; }
+    @media (min-width: 768px) {
+      #tiles .card-img {
+        min-width: 100%;
+        min-height: 177px; } }
+    @media (min-width: 992px) {
+      #tiles .card-img {
+        width: 100%; } }
+  #tiles .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0; }
+    #tiles .row.no-gutters > [class^="col-"], #tiles .row.no-gutters > [class*=" col-"] {
+      padding-right: 0;
+      padding-left: 0; }
+  #tiles .caption {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 13px 0 0 0;
+    background-color: #3c3d41;
+    min-width: 90px;
+    min-height: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-image: url(/images/grey-background.png);
+    background-image: url(/images/b36.png); }
+    @media (min-width: 1200px) {
+      #tiles .caption {
+        margin-bottom: 20px; } }
+    @media (min-width: 768px) {
+      #tiles .caption {
+        height: 60px;
+        padding-left: 0; } }
+    @media (min-width: 992px) {
+      #tiles .caption {
+        width: 100%; } }
+    @media (min-width: 1200px) {
+      #tiles .caption {
+        width: 100%; } }
 
 footer {
   background-color: #3c3d41;
