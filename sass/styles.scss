@@ -224,12 +224,12 @@ h3 {}
     #black-banner-section {
         height: 175px;
         background-color: #000;
-        border-top: 10px solid $color-red;
+        // border-top: 10px solid $color-red;
         color: #676767;
         background-image: url(/images/b20.png);
         h1 {
             font-size: 70px;
-            margin: 9px 0px;
+            margin: 0px 0px 9px 0;
         }
         h3 {
             font-family: "Gochi Hand";

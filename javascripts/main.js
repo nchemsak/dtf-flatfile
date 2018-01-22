@@ -40,12 +40,12 @@ $(document).ready(function() {
 
     console.log($(window).scrollTop());
 
-    if ($(window).scrollTop() > 150) {
-      $('#all-headings').addClass('navbar-fixed-top');
+    if ($(window).scrollTop() > 200) {
+      $('#wwrapper').addClass('navbar-fixed-top');
     }
 
-    if ($(window).scrollTop() < 151) {
-      $('#all-headings').removeClass('navbar-fixed-top');
+    if ($(window).scrollTop() < 201) {
+      $('#wwrapper').removeClass('navbar-fixed-top');
     }
   });
 });
