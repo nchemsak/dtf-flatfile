@@ -113,7 +113,7 @@ h3 {}
         float: left;
         background-color: $color-grey;
         background-image: url(/images/b20.png);
-    } 
+    }
     &::before {
         line-height: 35px;
         font-family: FontAwesome;
@@ -159,6 +159,12 @@ h3 {}
     }
 }
 
+
+.dtf-logo {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
 ////////////////////////////////// NAVBAR \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 .navbar {
     background-color: $color-red;
@@ -166,8 +172,11 @@ h3 {}
     min-height: $navbar-height !important;
     margin-bottom: 0;
     font-size: 18px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     @include sm {
-        font-size: 16px;
+        font-size: 14px;
     }
     @include md {
         font-size: 18px;
@@ -177,15 +186,16 @@ h3 {}
             a {
                 // change padding-top and bottom below to adjust navbar size
                 // you may also have to adjust min-height of .navbar as well.
-                padding-top: 12px;
-                padding-bottom: 12px;
+                // padding-top: 12px;
+                // padding-bottom: 12px;
                 color: #fff;
                 -moz-transition: .5s;
                 -webkit-transition: .5s;
                 transition: .5s;
                 &:hover {
-                    background-color: black;
+                    // background-color: black;
                     color: #fff;
+                    background-image: url(/images/grey-background.png);
                 }
             }
         }
@@ -295,8 +305,7 @@ body {
     font-size: 18px;
     line-height: 1.9em;
     -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    // background-color: #c5bd99;
+    -webkit-text-size-adjust: 100%; // background-color: #c5bd99;
     background-image: url(/images/b36.png);
 }
 
@@ -405,7 +414,8 @@ body {
     .row.no-gutters {
         margin-right: 0;
         margin-left: 0;
-
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
         &>[class^="col-"],
         &>[class*=" col-"] {
             padding-right: 0;
@@ -447,18 +457,17 @@ body {
 
 ////////////////////////////////// FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 footer {
-    background-color: $color-grey;
+
     padding: 60px 40px;
     color: rgba(255, 255, 255, 1.00);
     margin-bottom: 20px;
     border-bottom-right-radius: 6px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 6px;
-
-
     background-color: $color-grey;
-    background-image: url(/images/grey-background.png); // overflow: hidden;
-    // background-repeat: repeat;
+    background-image: url(/images/grey-background.png);
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
     .footer-brand,
     .footer-nav,
     .footer-social,
@@ -532,6 +541,8 @@ footer {
             &:hover {
                 color: rgba(255, 255, 255, 0.80);
                 text-decoration: none;
+                -webkit-filter: drop-shadow(5px 5px 5px #222);
+                filter: drop-shadow(5px 5px 5px #222);
             }
         } // icons
         .icon-link {
@@ -588,7 +599,6 @@ footer {
             }
         }
     }
-    /* NEWSLETTER IN FOOTER */
     .footer-ns {
         h4 {
             font-size: 11px;

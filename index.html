@@ -13,11 +13,27 @@
     <link rel="stylesheet" href="lib/node_modules/animate.css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Gochi+Hand|Karla" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
-<!-- ########################### BODY - BEGIN ############################## -->
-<!-- <body> -->
-<div class="logo-wrapper">
-    <img src="images/DT-logo-3.png" class="img-responsive" alt="Different Than Fitness - Nashville TN" />
+<div class="logo-wrapper hidden-xs">
+    <img src="images/DT-logo-3.png" class="img-responsive dtf-logo" alt="Different Than Fitness - Nashville TN" />
 </div>
 <div id="all-headings">
     <div class="large-banner-wrapper">
@@ -30,11 +46,13 @@
         <div class="grey-spacer"></div>
         <div class="white-spacer"></div>
         <div class="red-spacer"></div>
-        <div id="wwrapper">
+        <div id="sticky-nav-wrapper">
             <div id="black-banner-section">
+                <!-- <img src="images/DT-logo-3.png" class="img-responsive dtf-logo" alt="Different Than Fitness - Nashville TN" style="float: left;"/> -->
                 <h1 class="text-center">DIFFERENT THAN FITNESS</h1>
                 <h3 class="text-center">Be Better. Be Different.</h3>
             </div>
+            <!-- <br style="clear: both;"> -->
             <header class="navbar navbar-default bs-docs-nav" role="banner">
                 <div class="container">
                     <div class="navbar-header">
@@ -76,6 +94,7 @@
         </div>
     </div>
 </div>
+<!-- ########################### BODY - BEGIN ############################## -->
 
 <body id="body">
     <div class="container">
@@ -117,7 +136,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <a href="#" target="_blank">
                         <div class="row no-gutters">
                             <div class="col-xs-4 col-sm-12 services-frame animated fadeInRight">
@@ -139,7 +158,7 @@
             <!-- <div class="inner"> -->
             <div class="row">
                 <div class="col-md-3 footer-brand animated fadeInLeft">
-                    <a href="/"><img src="images/DT-logo-3.png" class="img-responsive" alt="Different Than Fitness - Nashville TN" /></a>
+                    <a href="/"><img src="images/DT-logo-3.png" class="img-responsive dtf-logo" alt="Different Than Fitness - Nashville TN" /></a>
                 </div>
                 <div class="col-md-4 footer-ns animated fadeInRight">
                     <h4>Inspire <br />—--------</h4>
@@ -178,7 +197,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2 animated fadeInDown footer-nav" id="footer-social">
+                <div class="col-md-2 animated fadeInDown footer-nav dtf-logo" id="footer-social">
                     <h4>Social Media <br />—----------------</h4>
                     <ul>
                         <li><a class="icon-link facebook"><i class="fa fa-facebook"></i></a></li>
@@ -192,25 +211,25 @@
             <p>Custom Website Design by <a href="http://www.ephemeralwave.com" target="_blank">eWave Studio</a></p>
         </section>
     </div>
-            <hr />
-        <!----------- Footer ------------>
-        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
-        <footer id="footer">
-            <!-- <div class="inner"> -->
-            <div class="row">
-                <div class="col-md-3 footer-brand animated fadeInLeft">
-                    <a href="/"><img src="images/DT-logo-3.png" class="img-responsive" alt="Different Than Fitness - Nashville TN" /></a>
-                </div>
-                <div class="col-md-4 footer-ns animated fadeInRight">
-                    <h4>Inspire <br />—--------</h4>
-                    <p>“Some workouts are greater than…
-                        <br /> Some workouts are less than…
-                        <br /> Some workouts are <strong>DIFFERENT THAN.</strong>”
-                        <br />
-                        <em>-Diamond Dallas Page</em>
-                    </p>
-                    <p>© 2018 Different Than Fitness</p>
-                    <!--     <h4>Newsletter</h4>
+    <hr />
+    <!----------- Footer ------------>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <footer id="footer">
+        <!-- <div class="inner"> -->
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <a href="/"><img src="images/DT-logo-3.png" class="img-responsive" alt="Different Than Fitness - Nashville TN" /></a>
+            </div>
+            <div class="col-md-4 footer-ns animated fadeInRight">
+                <h4>Inspire <br />—--------</h4>
+                <p>“Some workouts are greater than…
+                    <br /> Some workouts are less than…
+                    <br /> Some workouts are <strong>DIFFERENT THAN.</strong>”
+                    <br />
+                    <em>-Diamond Dallas Page</em>
+                </p>
+                <p>© 2018 Different Than Fitness</p>
+                <!--     <h4>Newsletter</h4>
                     <p>Sign up to receive class schedule information and to keep in touch with Different Than Fitness.</p>
                     <p>
                         <div class="input-group">
@@ -220,57 +239,57 @@
                             </span>
                         </div>
                     </p> -->
+            </div>
+            <div class="col-md-3 footer-nav animated fadeInUp" id="footer-menu-links">
+                <h4>Quick Links <br />—--------------</h4>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">About DTF</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-3 footer-nav animated fadeInUp" id="footer-menu-links">
-                    <h4>Quick Links <br />—--------------</h4>
-                    <div class="col-md-6">
-                        <ul class="list">
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">About DTF</a></li>
-                            <li><a href="#">Media</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list">
-                            <li><a href="#">Inspire</a></li>
-                            <li><a href="#">Classes</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 animated fadeInDown footer-nav" id="footer-social">
-                    <h4>Social Media <br />—----------------</h4>
-                    <ul>
-                        <li><a class="icon-link facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="icon-link twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a class="icon-link instagram"><i class="fa fa-instagram"></i></a></li>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">Inspire</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
-        </footer>
-        <section style="text-align:center; margin:10px auto;">
-            <p>Custom Website Design by <a href="http://www.ephemeralwave.com" target="_blank">eWave Studio</a></p>
-        </section>
+            <div class="col-md-2 animated fadeInDown footer-nav" id="footer-social">
+                <h4>Social Media <br />—----------------</h4>
+                <ul>
+                    <li><a class="icon-link facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="icon-link twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="icon-link instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;">
+        <p>Custom Website Design by <a href="http://www.ephemeralwave.com" target="_blank">eWave Studio</a></p>
+    </section>
     </div>
-            <hr />
-        <!----------- Footer ------------>
-        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
-        <footer id="footer">
-            <!-- <div class="inner"> -->
-            <div class="row">
-                <div class="col-md-3 footer-brand animated fadeInLeft">
-                    <a href="/"><img src="images/DT-logo-3.png" class="img-responsive" alt="Different Than Fitness - Nashville TN" /></a>
-                </div>
-                <div class="col-md-4 footer-ns animated fadeInRight">
-                    <h4>Inspire <br />—--------</h4>
-                    <p>“Some workouts are greater than…
-                        <br /> Some workouts are less than…
-                        <br /> Some workouts are <strong>DIFFERENT THAN.</strong>”
-                        <br />
-                        <em>-Diamond Dallas Page</em>
-                    </p>
-                    <p>© 2018 Different Than Fitness</p>
-                    <!--     <h4>Newsletter</h4>
+    <hr />
+    <!----------- Footer ------------>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <footer id="footer">
+        <!-- <div class="inner"> -->
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <a href="/"><img src="images/DT-logo-3.png" class="img-responsive" alt="Different Than Fitness - Nashville TN" /></a>
+            </div>
+            <div class="col-md-4 footer-ns animated fadeInRight">
+                <h4>Inspire <br />—--------</h4>
+                <p>“Some workouts are greater than…
+                    <br /> Some workouts are less than…
+                    <br /> Some workouts are <strong>DIFFERENT THAN.</strong>”
+                    <br />
+                    <em>-Diamond Dallas Page</em>
+                </p>
+                <p>© 2018 Different Than Fitness</p>
+                <!--     <h4>Newsletter</h4>
                     <p>Sign up to receive class schedule information and to keep in touch with Different Than Fitness.</p>
                     <p>
                         <div class="input-group">
@@ -280,37 +299,37 @@
                             </span>
                         </div>
                     </p> -->
+            </div>
+            <div class="col-md-3 footer-nav animated fadeInUp" id="footer-menu-links">
+                <h4>Quick Links <br />—--------------</h4>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">About DTF</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-3 footer-nav animated fadeInUp" id="footer-menu-links">
-                    <h4>Quick Links <br />—--------------</h4>
-                    <div class="col-md-6">
-                        <ul class="list">
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">About DTF</a></li>
-                            <li><a href="#">Media</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list">
-                            <li><a href="#">Inspire</a></li>
-                            <li><a href="#">Classes</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 animated fadeInDown footer-nav" id="footer-social">
-                    <h4>Social Media <br />—----------------</h4>
-                    <ul>
-                        <li><a class="icon-link facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="icon-link twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a class="icon-link instagram"><i class="fa fa-instagram"></i></a></li>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">Inspire</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
-        </footer>
-        <section style="text-align:center; margin:10px auto;">
-            <p>Custom Website Design by <a href="http://www.ephemeralwave.com" target="_blank">eWave Studio</a></p>
-        </section>
+            <div class="col-md-2 animated fadeInDown footer-nav" id="footer-social">
+                <h4>Social Media <br />—----------------</h4>
+                <ul>
+                    <li><a class="icon-link facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="icon-link twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="icon-link instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;">
+        <p>Custom Website Design by <a href="http://www.ephemeralwave.com" target="_blank">eWave Studio</a></p>
+    </section>
     </div>
     <!-- ############################# SCRIPTS ################################# -->
     <script src="lib/node_modules/jquery/dist/jquery.min.js"></script>

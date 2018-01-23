@@ -78,28 +78,32 @@ h1 {
     -webkit-font-smoothing: antialiased;
     font-size: 22px; }
 
+.dtf-logo {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222); }
+
 .navbar {
   background-color: #AC0101;
   text-transform: uppercase;
   min-height: 45px !important;
   margin-bottom: 0;
-  font-size: 18px; }
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   @media (min-width: 768px) {
     .navbar {
-      font-size: 16px; } }
+      font-size: 14px; } }
   @media (min-width: 992px) {
     .navbar {
       font-size: 18px; } }
   .navbar .navbar-nav li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
     color: #fff;
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s; }
     .navbar .navbar-nav li a:hover {
-      background-color: black;
-      color: #fff; }
+      color: #fff;
+      background-image: url(/images/grey-background.png); }
   .navbar .navbar-logo {
     width: 70%;
     height: auto;
@@ -296,7 +300,9 @@ body {
         width: 100%; } }
   #tiles .row.no-gutters {
     margin-right: 0;
-    margin-left: 0; }
+    margin-left: 0;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); }
     #tiles .row.no-gutters > [class^="col-"], #tiles .row.no-gutters > [class*=" col-"] {
       padding-right: 0;
       padding-left: 0; }
@@ -327,7 +333,6 @@ body {
         width: 100%; } }
 
 footer {
-  background-color: #3c3d41;
   padding: 60px 40px;
   color: white;
   margin-bottom: 20px;
@@ -336,8 +341,9 @@ footer {
   border-bottom-left-radius: 6px;
   background-color: #3c3d41;
   background-image: url(/images/grey-background.png);
-  /* SOCIAL MEDIA ICONS IN FOOTER */
-  /* NEWSLETTER IN FOOTER */ }
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  /* SOCIAL MEDIA ICONS IN FOOTER */ }
   footer .footer-brand,
   footer .footer-nav,
   footer .footer-social,
@@ -390,7 +396,9 @@ footer {
     color: white; }
     footer #footer-social a:hover {
       color: rgba(255, 255, 255, 0.8);
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(5px 5px 5px #222); }
   footer #footer-social .icon-link {
     width: 60px;
     height: 60px;

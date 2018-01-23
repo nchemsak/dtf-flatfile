@@ -33,12 +33,12 @@ function topFunction() {
 function scrollSticky() {
     console.log($(window).scrollTop());
     if ($(window).scrollTop() > 294) {
-        $('#wwrapper').addClass('navbar-fixed-top');
+        $('#sticky-nav-wrapper').addClass('navbar-fixed-top');
         $('#body').addClass('scrollAdjust');
     }
 
     if ($(window).scrollTop() < 295) {
-        $('#wwrapper').removeClass('navbar-fixed-top');
+        $('#sticky-nav-wrapper').removeClass('navbar-fixed-top');
         $('#body').removeClass('scrollAdjust');
     }
 
