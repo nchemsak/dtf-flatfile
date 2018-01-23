@@ -113,6 +113,42 @@ h3 {}
         float: left;
         background-color: $color-grey;
         background-image: url(/images/b20.png);
+    } 
+    &::before {
+        line-height: 35px;
+        font-family: FontAwesome;
+        content: "\f106";
+        -webkit-font-smoothing: antialiased;
+        font-size: 22px;
+    }
+}
+
+#ribbon {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 196px;
+    z-index: 99;
+    border: none;
+    outline: 0;
+    background-color: $color-red;
+    opacity: .9;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    height: 95px;
+    width: 100%;
+    z-index: 10000;
+    transition: all .2s ease-in-out 0s;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(20deg);
+    &:hover {
+        display: block;
+        overflow: hidden;
+        float: left;
+        background-color: $color-grey;
+        background-image: url(/images/b20.png);
     }
     &::before {
         line-height: 35px;
@@ -260,7 +296,8 @@ body {
     line-height: 1.9em;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
-    background-color: #c5bd99;
+    // background-color: #c5bd99;
+    background-image: url(/images/b36.png);
 }
 
 
