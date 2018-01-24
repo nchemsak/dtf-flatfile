@@ -99,13 +99,16 @@ img.dtf-logo {
     outline-style: none; }
 
 .navbar {
-  background-color: #AC0101;
+  background: linear-gradient(to right, #dd9999, #AC0101, #dd9999);
   text-transform: uppercase;
   min-height: 45px !important;
   margin-bottom: 0;
   font-size: 18px;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  @media (max-width: 767px) {
+    .navbar {
+      background: #AC0101; } }
   @media (min-width: 768px) {
     .navbar {
       font-size: 14px; } }
@@ -185,7 +188,11 @@ img.dtf-logo {
     background-color: #fff; }
   .large-banner-wrapper .red-spacer {
     height: 10px;
-    background-color: #AC0101; }
+    background: linear-gradient(to right, #dd9999, #AC0101, #dd9999); }
+  .large-banner-wrapper .red-spacer2 {
+    height: 10px;
+    background-color: #AC0101;
+    background: linear-gradient(to right, #c85a5a, #AC0101, #c85a5a); }
   .large-banner-wrapper .black-spacer {
     height: 10px;
     background-color: #000;

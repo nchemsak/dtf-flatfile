@@ -191,14 +191,16 @@ img.dtf-logo {
 
 ////////////////////////////////// NAVBAR \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 .navbar {
-    background-color: $color-red;
+    background: linear-gradient(to right, #dd9999, $color-red, #dd9999);
     text-transform: uppercase;
     min-height: $navbar-height !important;
     margin-bottom: 0;
     font-size: 18px;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    @include xs-only {
+        background: $color-red;
+    }
     @include sm {
         font-size: 14px;
     }
@@ -219,8 +221,7 @@ img.dtf-logo {
                     background-image: url(/images/grey-background.png);
                 }
             }
-        }
-      ///// begin code justifies navbar items across the top evenly /////
+        } ///// begin code justifies navbar items across the top evenly /////
         >li {
             @include sm {
                 display: table-cell;
@@ -234,8 +235,7 @@ img.dtf-logo {
             table-layout: auto;
             float: none;
             width: 100%;
-        }
-        /////////////////end of navbar spacing code ////////////////////////////
+        } /////////////////end of navbar spacing code ////////////////////////////
     }
     .navbar-logo {
         width: 70%;
@@ -305,7 +305,16 @@ img.dtf-logo {
     }
     .red-spacer {
         height: 10px;
+        // background-color: $color-red;
+            background: linear-gradient(to right, #dd9999, $color-red, #dd9999);
+
+    }
+        .red-spacer2 {
+        height: 10px;
         background-color: $color-red;
+                    background: linear-gradient(to right, #c85a5a, $color-red, #c85a5a);
+
+
     }
     .black-spacer {
         height: 10px;
@@ -322,8 +331,7 @@ img.dtf-logo {
         h1 {
             font-size: 70px;
             margin: 0px 0px 0px 0;
-                        font-family: "Roboto Mono";
-
+            font-family: "Roboto Mono";
         }
         h3 {
             font-family: "Gochi Hand";
