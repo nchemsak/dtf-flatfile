@@ -86,16 +86,6 @@ img.dtf-logo {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #aaa); }
 
-.collapsed {
-  outline-color: transparent;
-  outline-style: none; }
-  .collapsed:focus {
-    outline-color: transparent;
-    outline-style: none; }
-  .collapsed:active {
-    outline-color: transparent;
-    outline-style: none; }
-
 .btn-link {
   outline-color: transparent;
   outline-style: none;
@@ -162,6 +152,8 @@ img.dtf-logo {
     width: 250px;
     height: auto;
     position: fixed;
+    display: inline;
+    text-align: center;
     top: 0px;
     left: 0;
     right: 0; }

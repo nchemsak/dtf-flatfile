@@ -171,18 +171,6 @@ img.dtf-logo {
 }
 
 
-.collapsed {
-    outline-color: transparent;
-    outline-style: none; // width: 100%;
-    &:focus {
-        outline-color: transparent;
-        outline-style: none;
-    }
-    &:active {
-        outline-color: transparent;
-        outline-style: none;
-    }
-}
 
 .btn-link {
     // width: 100%;
@@ -275,10 +263,12 @@ img.dtf-logo {
     height: 267px;
 
     img {
-        margin: 0 auto;
+        margin: 0 auto; 
         width: 250px;
         height: auto;
         position: fixed;
+        display: inline;
+        text-align: center;
         top: 0px;
         left: 0;
         right: 0;

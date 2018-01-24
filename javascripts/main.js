@@ -7,7 +7,6 @@ window.onscroll = function() {
     scrollFunction();
     scrollSticky();
     ribbonFunction();
-    // bannerHideFunction();
 };
 
 function scrollFunction() {
@@ -61,41 +60,9 @@ function ribbonFunction() {
 }
 
 
-// function bannerHideFunction() {
-
-//     if ($(window).scrollTop() < 295) {
-//         $('#dtf-collapse').addClass('show');
-     
-//     }
-
-//     if ($(window).scrollTop() > 294) {
-//         $('#dtf-collapse').removeClass('show');
-      
-//     }
-
-
-
-// }
-
-$(window).scroll(function() {
-var theta = $(window).scrollTop() / 100 % Math.PI;
-$('#dtf-logo-id').css({ transform: 'rotate(' + theta + 'rad)' });
-});
-
 
 // $(window).scroll(function() {
-  
-//   // get the variable of how far we've scrolled from the top
-//   var offset = $(window).scrollTop();
-//     offset     = offset * 10;
-
-//   // add css transform with the offset variable
-//   $('#dtf-logo-id').css({
-//     '-moz-transform': 'rotate(' + offset + 'deg)',
-//     '-webkit-transform': 'rotate(' + offset + 'deg)',
-//     '-o-transform': 'rotate(' + offset + 'deg)',
-//     '-ms-transform': 'rotate(' + offset + 'deg)',
-//     'transform': 'rotate(' + offset + 'deg)',
-//   });
-  
+// var theta = $(window).scrollTop() / 100 % Math.PI;
+// $('#dtf-logo-id').css({ transform: 'rotate(' + theta + 'rad)' });
 // });
+
