@@ -78,9 +78,35 @@ h1 {
     -webkit-font-smoothing: antialiased;
     font-size: 22px; }
 
-.dtf-logo {
+img.dtf-logo {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222); }
+  filter: drop-shadow(5px 5px 5px #222);
+  transition: all .5s; }
+  img.dtf-logo:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #aaa); }
+
+.collapsed {
+  outline-color: transparent;
+  outline-style: none; }
+  .collapsed:focus {
+    outline-color: transparent;
+    outline-style: none; }
+  .collapsed:active {
+    outline-color: transparent;
+    outline-style: none; }
+
+.btn-link {
+  outline-color: transparent;
+  outline-style: none;
+  margin: 0 auto;
+  display: block; }
+  .btn-link:focus {
+    outline-color: transparent;
+    outline-style: none; }
+  .btn-link:active {
+    outline-color: transparent;
+    outline-style: none; }
 
 .navbar {
   background-color: #AC0101;
@@ -128,11 +154,17 @@ h1 {
 .logo-wrapper {
   background-color: #fff;
   padding-bottom: 10px;
-  background-image: url(/images/b36.png); }
+  background-image: url(/images/b36.png);
+  position: relative;
+  height: 267px; }
   .logo-wrapper img {
     margin: 0 auto;
     width: 250px;
-    height: auto; }
+    height: auto;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0; }
 
 .large-banner-wrapper {
   position: relative; }
@@ -166,7 +198,7 @@ h1 {
     padding-bottom: 13px; }
     .large-banner-wrapper #black-banner-section h1 {
       font-size: 70px;
-      margin: 0px 0px 9px 0; }
+      margin: 0px 0px 0px 0; }
     .large-banner-wrapper #black-banner-section h3 {
       font-family: "Gochi Hand";
       font-size: 44px;

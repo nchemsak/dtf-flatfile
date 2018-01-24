@@ -160,9 +160,45 @@ h3 {}
 }
 
 
-.dtf-logo {
+img.dtf-logo {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
+    transition: all .5s;
+    &:hover {
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #aaa);
+    }
+}
+
+
+.collapsed {
+    outline-color: transparent;
+    outline-style: none; // width: 100%;
+    &:focus {
+        outline-color: transparent;
+        outline-style: none;
+    }
+    &:active {
+        outline-color: transparent;
+        outline-style: none;
+    }
+}
+
+.btn-link {
+    // width: 100%;
+    outline-color: transparent;
+    outline-style: none;
+    margin: 0 auto;
+    display: block;
+    &:focus {
+
+        outline-color: transparent;
+        outline-style: none;
+    }
+    &:active {
+        outline-color: transparent;
+        outline-style: none;
+    }
 }
 
 ////////////////////////////////// NAVBAR \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -235,11 +271,17 @@ h3 {}
     background-color: #fff;
     padding-bottom: 10px;
     background-image: url(/images/b36.png);
+    position: relative;
+    height: 267px;
 
     img {
         margin: 0 auto;
         width: 250px;
         height: auto;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
     }
 }
 
@@ -282,7 +324,7 @@ h3 {}
         padding-bottom: 13px;
         h1 {
             font-size: 70px;
-            margin: 0px 0px 9px 0;
+            margin: 0px 0px 0px 0;
         }
         h3 {
             font-family: "Gochi Hand";
