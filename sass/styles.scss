@@ -208,10 +208,7 @@ img.dtf-logo {
     .navbar-nav {
         li {
             a {
-                // change padding-top and bottom below to adjust navbar size
-                // you may also have to adjust min-height of .navbar as well.
-                // padding-top: 12px;
-                // padding-bottom: 12px;
+
                 color: #fff;
                 -moz-transition: .5s;
                 -webkit-transition: .5s;
@@ -223,6 +220,22 @@ img.dtf-logo {
                 }
             }
         }
+      ///// begin code justifies navbar items across the top evenly /////
+        >li {
+            @include sm {
+                display: table-cell;
+                float: none;
+                text-align: center;
+            }
+        }
+        @include sm {
+            margin: 0 auto;
+            display: table;
+            table-layout: auto;
+            float: none;
+            width: 100%;
+        }
+        /////////////////end of navbar spacing code ////////////////////////////
     }
     .navbar-logo {
         width: 70%;
@@ -230,24 +243,18 @@ img.dtf-logo {
         display: inline;
         padding: 5px 0 0 5px;
     }
-}
-
-
-// Below code justifies navbar items across the top evenly
-@include sm {
-    .navbar-nav {
-        margin: 0 auto;
-        display: table;
-        table-layout: auto;
-        float: none;
-        width: 100%;
-    }
-    .navbar-nav>li {
-        display: table-cell;
-        float: none;
-        text-align: center;
+    .navbar-collapse {
+        @include xs-only {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @include sm {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }
+
 
 .scrollAdjust {
     padding-top: 220px;
@@ -263,7 +270,7 @@ img.dtf-logo {
     height: 267px;
 
     img {
-        margin: 0 auto; 
+        margin: 0 auto;
         width: 250px;
         height: auto;
         position: fixed;
@@ -315,6 +322,8 @@ img.dtf-logo {
         h1 {
             font-size: 70px;
             margin: 0px 0px 0px 0;
+                        font-family: "Roboto Mono";
+
         }
         h3 {
             font-family: "Gochi Hand";

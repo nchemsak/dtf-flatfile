@@ -6,7 +6,7 @@
 window.onscroll = function() {
     scrollFunction();
     scrollSticky();
-    ribbonFunction();
+    // ribbonFunction();
 };
 
 function scrollFunction() {
@@ -16,7 +16,7 @@ function scrollFunction() {
         if (myB) {
             myB.style.display = "block";
         }
-    } else { 
+    } else {
         if (myB) {
             myB.style.display = "none";
         }
@@ -45,19 +45,19 @@ function scrollSticky() {
 }
 
 
-function ribbonFunction() {
-       var myB = document.getElementById("ribbon");
-    myB.style.display = "none";
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        if (myB) {
-            myB.style.display = "block";
-        }
-    } else {
-        if (myB) {
-            myB.style.display = "none";
-        }
-    }
-}
+// function ribbonFunction() {
+//        var myB = document.getElementById("ribbon");
+//     myB.style.display = "none";
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         if (myB) {
+//             myB.style.display = "block";
+//         }
+//     } else {
+//         if (myB) {
+//             myB.style.display = "none";
+//         }
+//     }
+// }
 
 
 

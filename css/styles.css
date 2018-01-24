@@ -120,24 +120,32 @@ img.dtf-logo {
     .navbar .navbar-nav li a:hover {
       color: #fff;
       background-image: url(/images/grey-background.png); }
+  @media (min-width: 768px) {
+    .navbar .navbar-nav > li {
+      display: table-cell;
+      float: none;
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .navbar .navbar-nav {
+      margin: 0 auto;
+      display: table;
+      table-layout: auto;
+      float: none;
+      width: 100%; } }
   .navbar .navbar-logo {
     width: 70%;
     height: auto;
     display: inline;
     padding: 5px 0 0 5px; }
+  @media (max-width: 767px) {
+    .navbar .navbar-collapse {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media (min-width: 768px) {
+    .navbar .navbar-collapse {
+      padding-left: 0;
+      padding-right: 0; } }
 
-@media (min-width: 768px) {
-  .navbar-nav {
-    margin: 0 auto;
-    display: table;
-    table-layout: auto;
-    float: none;
-    width: 100%; }
-
-  .navbar-nav > li {
-    display: table-cell;
-    float: none;
-    text-align: center; } }
 .scrollAdjust {
   padding-top: 220px; }
 
@@ -190,7 +198,8 @@ img.dtf-logo {
     padding-bottom: 13px; }
     .large-banner-wrapper #black-banner-section h1 {
       font-size: 70px;
-      margin: 0px 0px 0px 0; }
+      margin: 0px 0px 0px 0;
+      font-family: "Roboto Mono"; }
     .large-banner-wrapper #black-banner-section h3 {
       font-family: "Gochi Hand";
       font-size: 44px;
