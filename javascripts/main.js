@@ -66,3 +66,11 @@ function scrollSticky() {
 // $('#dtf-logo-id').css({ transform: 'rotate(' + theta + 'rad)' });
 // });
 
+$(window).scroll(function(e){
+  parallax();
+});
+
+function parallax(){
+  var scrolled = $(window).scrollTop();
+  $('.background').css('top',-(scrolled*0.15)+'px');
+}
