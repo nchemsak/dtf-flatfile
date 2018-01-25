@@ -191,13 +191,14 @@ img.dtf-logo {
 
 ////////////////////////////////// NAVBAR \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 .navbar {
-    background: linear-gradient(to right, #dd9999, $color-red, #dd9999);
+    background: linear-gradient(to right, #780000, $color-red, #780000);
     text-transform: uppercase;
     min-height: $navbar-height !important;
     margin-bottom: 0;
     font-size: 18px;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0;
     @include xs-only {
         background: $color-red;
     }
@@ -306,13 +307,13 @@ img.dtf-logo {
     .red-spacer {
         height: 10px;
         // background-color: $color-red;
-            background: linear-gradient(to right, #dd9999, $color-red, #dd9999);
+    background: linear-gradient(to right, #780000, $color-red, #780000);
 
     }
         .red-spacer2 {
         height: 10px;
         background-color: $color-red;
-                    background: linear-gradient(to right, #c85a5a, $color-red, #c85a5a);
+                    background: linear-gradient(to right, #780000, $color-red, #780000);
 
 
     }
