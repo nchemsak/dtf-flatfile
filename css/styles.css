@@ -223,8 +223,7 @@ body {
   font-size: 18px;
   line-height: 1.9em;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  background-image: url(/images/b36.png); }
+  -webkit-text-size-adjust: 100%; }
 
 .no-gutters .caption {
   transition: .6s;
@@ -345,8 +344,8 @@ body {
   #tiles .row.no-gutters {
     margin-right: 0;
     margin-left: 0;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222); }
+    -webkit-filter: drop-shadow(1px 1px 3px #222);
+    filter: drop-shadow(1px 1px 3px #222); }
     #tiles .row.no-gutters > [class^="col-"], #tiles .row.no-gutters > [class*=" col-"] {
       padding-right: 0;
       padding-left: 0; }
@@ -423,6 +422,8 @@ footer {
       footer .footer-nav ul.list a:hover {
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none; }
+  footer a {
+    text-shadow: none; }
   footer #footer-social ul {
     list-style: none;
     padding: 0px;
@@ -667,9 +668,6 @@ nav.btn-bar {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-#about-me {
-  color: #000; }
-
 .pageTitle,
 .pageSubTitle {
   font-family: 'Titillium', sans-serif;
@@ -706,5 +704,58 @@ nav.btn-bar {
   margin: 20px auto;
   background: #fff;
   box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.25); }
+
+.content-page-heading-wrapper #dtf-heading-text {
+  display: inline-block;
+  font-size: 50px;
+  top: 21px;
+  position: absolute;
+  margin-left: 2vw;
+  color: black; }
+.content-page-heading-wrapper img.dtf-logo {
+  display: inline;
+  width: 100px;
+  height: auto;
+  margin-left: 2vw; }
+.content-page-heading-wrapper #black-banner-section {
+  background-image: url(/images/b36.png); }
+
+#about-me h1 {
+  color: #000;
+  border-bottom: solid 1px #e0e0e0;
+  margin: 0 0 20px 0;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2em;
+  color: #FF7600; }
+#about-me .pageSubTitle {
+  margin-bottom: 0.1em;
+  font-size: 5.4em;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #333;
+  font-family: 'Mrs Saint Delafield', cursive; }
+#about-me .lacey-float {
+  border-radius: 50%;
+  width: 400px;
+  height: auto;
+  float: right;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.25); }
+
+.inner-page-wrapper {
+  width: 100%;
+  padding: 40px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.25); }
+
+.e-wave-tag {
+  text-align: center;
+  margin: 10px auto; }
+  .e-wave-tag a {
+    text-shadow: none !important;
+    font-weight: 700; }
 
 /*# sourceMappingURL=styles.css.map */
